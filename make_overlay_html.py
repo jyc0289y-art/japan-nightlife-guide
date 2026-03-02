@@ -1059,6 +1059,247 @@ _MAP_QUERIES = {
   ("kanazawa","hanami"):("兼六園 桜 金沢","15z"),
 }
 
+# ── 섹션별 구글맵 쿼리 (daytime / spots / food) ──────────────────
+# 각 튜플: (map_query, zoom_level_string)
+_SECTION_MAPS = {
+  # ────── 낮 일정 ──────────────────────────────────────────────
+  ("fukuoka","daytime"):[
+    ("太宰府天満宮","15"),
+    ("海の中道海浜公園 福岡","14"),
+    ("舞鶴公園 福岡城跡","16"),
+  ],
+  ("miyazaki","daytime"):[
+    ("日南海岸 青島神社 宮崎","13"),
+    ("宮崎神宮","15"),
+    ("堀切峠 宮崎","14"),
+  ],
+  ("kagoshima","daytime"):[
+    ("桜島 鹿児島","13"),
+    ("知覧特攻平和会館","15"),
+    ("仙巌園 鹿児島","15"),
+  ],
+  ("oita","daytime"):[
+    ("別府地獄めぐり","15"),
+    ("由布院 湯布院","15"),
+    ("高崎山自然動物園 大分","15"),
+  ],
+  ("kumamoto","daytime"):[
+    ("熊本城","15"),
+    ("阿蘇山 阿蘇中岳火口","12"),
+    ("水前寺成趣園 熊本","15"),
+  ],
+  ("nagasaki","daytime"):[
+    ("グラバー園 長崎","16"),
+    ("出島 長崎","16"),
+    ("平和公園 長崎 原爆資料館","15"),
+  ],
+  ("naha","daytime"):[
+    ("首里城 那覇","15"),
+    ("国際通り 那覇","15"),
+    ("沖縄美ら海水族館","13"),
+  ],
+  ("kitakyushu","daytime"):[
+    ("門司港レトロ地区","15"),
+    ("皿倉山 北九州市","14"),
+    ("旦過市場 北九州 小倉","16"),
+  ],
+  ("hiroshima","daytime"):[
+    ("原爆ドーム 平和記念公園 広島","15"),
+    ("厳島神社 宮島 広島","14"),
+    ("広島城","15"),
+  ],
+  ("okayama","daytime"):[
+    ("後楽園 岡山","15"),
+    ("倉敷美観地区","16"),
+    ("岡山城","16"),
+  ],
+  ("matsuyama","daytime"):[
+    ("道後温泉本館","16"),
+    ("松山城 愛媛","15"),
+    ("松山市 坊っちゃん列車 大街道駅","16"),
+  ],
+  ("sapporo","daytime"):[
+    ("大通公園 札幌","15"),
+    ("北海道庁旧本庁舎 赤レンガ 札幌","16"),
+    ("札幌時計台","16"),
+  ],
+  ("hakodate","daytime"):[
+    ("函館山 ロープウェイ","14"),
+    ("金森赤レンガ倉庫 函館","15"),
+    ("元町 函館 旧函館区公会堂","15"),
+  ],
+  ("sendai","daytime"):[
+    ("仙台城跡 伊達政宗像","15"),
+    ("松島海岸 宮城","13"),
+    ("定禅寺通り 仙台市 ケヤキ並木","15"),
+  ],
+  ("kanazawa","daytime"):[
+    ("兼六園 金沢","15"),
+    ("ひがし茶屋街 金沢","16"),
+    ("金沢21世紀美術館","16"),
+  ],
+  # ────── 스팟 ─────────────────────────────────────────────────
+  ("fukuoka","spots"):[
+    ("中洲 福岡市 居酒屋","16"),
+    ("天神 福岡市 繁華街","15"),
+    ("中洲 スナック 福岡","16"),
+  ],
+  ("miyazaki","spots"):[
+    ("西橘通り 宮崎市","16"),
+    ("ニシタチ スナック 宮崎","16"),
+  ],
+  ("kagoshima","spots"):[
+    ("天文館通り 鹿児島市","15"),
+    ("天文館 居酒屋 路地 鹿児島","16"),
+  ],
+  ("oita","spots"):[
+    ("都町 大分市 居酒屋","16"),
+    ("別府駅 居酒屋 温泉","15"),
+  ],
+  ("kumamoto","spots"):[
+    ("下通りアーケード 熊本市","15"),
+    ("上通 熊本市 居酒屋","15"),
+  ],
+  ("nagasaki","spots"):[
+    ("浜町アーケード 長崎市","15"),
+    ("稲佐山展望台 長崎","14"),
+  ],
+  ("naha","spots"):[
+    ("松山 那覇市 ナイトライフ","16"),
+    ("那覇市 三線ライブ バー","15"),
+  ],
+  ("kitakyushu","spots"):[
+    ("小倉駅 北九州市 居酒屋","15"),
+    ("旦過市場 小倉 北九州","16"),
+  ],
+  ("hiroshima","spots"):[
+    ("流川通り 広島市","15"),
+    ("薬研堀通り 広島市","15"),
+  ],
+  ("okayama","spots"):[
+    ("奉還町 岡山市 居酒屋","15"),
+    ("表町商店街 岡山市","15"),
+  ],
+  ("matsuyama","spots"):[
+    ("銀天街 松山市 居酒屋","15"),
+    ("大街道 松山市 飲食街","15"),
+  ],
+  ("sapporo","spots"):[
+    ("すすきの 交差点 札幌市","15"),
+    ("すすきの 居酒屋 路地 札幌","16"),
+  ],
+  ("hakodate","spots"):[
+    ("大門横丁 函館市","16"),
+    ("末広町 函館市 バー","15"),
+  ],
+  ("sendai","spots"):[
+    ("国分町 仙台市 居酒屋","15"),
+    ("国分町 仙台 スナック","16"),
+  ],
+  ("kanazawa","spots"):[
+    ("片町 金沢市 居酒屋","15"),
+    ("木倉町 金沢市 バー","16"),
+  ],
+  # ────── 음식 ─────────────────────────────────────────────────
+  ("fukuoka","food"):[
+    ("博多ラーメン 中洲 福岡","15"),
+    ("屋台 中洲 那珂川 福岡","15"),
+  ],
+  ("miyazaki","food"):[
+    ("チキン南蛮 おぐら 宮崎市","15"),
+    ("宮崎地鶏 宮崎市 グルメ","14"),
+  ],
+  ("kagoshima","food"):[
+    ("薩摩黒豚 天文館 鹿児島","15"),
+    ("天文館 さつま揚げ キビナゴ 鹿児島","15"),
+  ],
+  ("oita","food"):[
+    ("とり天 大分市 居酒屋","15"),
+    ("別府地獄蒸し 別府市","15"),
+  ],
+  ("kumamoto","food"):[
+    ("馬刺し 熊本 下通り","15"),
+    ("からし蓮根 熊本市 郷土料理","15"),
+  ],
+  ("nagasaki","food"):[
+    ("長崎ちゃんぽん 浜町 長崎市","15"),
+    ("皿うどん トルコライス 長崎市","15"),
+  ],
+  ("naha","food"):[
+    ("ゴーヤーチャンプルー 国際通り 那覇","15"),
+    ("ソーキそば ラフテー 松山 那覇市","15"),
+  ],
+  ("kitakyushu","food"):[
+    ("焼きうどん 小倉 北九州市","15"),
+    ("旦過市場 小倉 魚町 北九州","15"),
+  ],
+  ("hiroshima","food"):[
+    ("お好み村 広島市 広島焼き","16"),
+    ("広島 カキフライ 牡蛎 流川","15"),
+  ],
+  ("okayama","food"):[
+    ("ままかり 岡山市 居酒屋","15"),
+    ("祭りずし 岡山市","15"),
+  ],
+  ("matsuyama","food"):[
+    ("じゃこ天 松山市 居酒屋","15"),
+    ("鯛めし 松山市 居酒屋","15"),
+  ],
+  ("sapporo","food"):[
+    ("味噌ラーメン すすきの 札幌市","15"),
+    ("カニ ウニ 海鮮 すすきの 札幌","15"),
+  ],
+  ("hakodate","food"):[
+    ("函館朝市 函館駅前","15"),
+    ("函館塩ラーメン 函館市","15"),
+  ],
+  ("sendai","food"):[
+    ("牛タン 国分町 仙台市","15"),
+    ("ずんだ餅 笹かまぼこ 仙台市","15"),
+  ],
+  ("kanazawa","food"):[
+    ("近江町市場 金沢市","15"),
+    ("のどぐろ 治部煮 片町 金沢","15"),
+  ],
+}
+
+
+import re as _re
+
+def _build_sections(city, cat):
+  """detail HTML을 <p><b> 경계로 파싱 → sections 리스트 생성
+  각 섹션은 {name, detail, map_query, map_zoom, video} 딕셔너리"""
+  d = OVERLAY_DETAIL.get(city, {}).get(cat, {})
+  detail = d.get("detail", "")
+  videos = d.get("videos", [])
+  maps = _SECTION_MAPS.get((city, cat), [])
+  if not maps:
+    return None
+  # <p><b> 직전에서 분리
+  parts = _re.split(r'(?=<p[^>]*><b)', detail.strip())
+  parts = [p for p in parts if p.strip()]
+  sections = []
+  for i, (mq, mz) in enumerate(maps):
+    part = parts[i] if i < len(parts) else ""
+    vid = videos[i % len(videos)] if videos else None
+    # <b>…</b> 에서 섹션 이름 추출 (furigana 스팬 제거)
+    name_m = _re.match(r'<p[^>]*><b>(.*?)</b>', part)
+    if name_m:
+      raw_name = name_m.group(1)
+      # <span> 태그 제거하여 순수 텍스트만 남김
+      name = _re.sub(r'<[^>]+>', '', raw_name).strip()
+    else:
+      name = f"섹션 {i+1}"
+    sections.append({
+      "name": name,
+      "detail": part,
+      "map_query": mq,
+      "map_zoom": mz,
+      "video": vid,
+    })
+  return sections
+
+
 def build_overlay_js_data():
   """모든 오버레이 데이터를 JS 주입용으로 변환"""
   combined = {}
@@ -1066,11 +1307,19 @@ def build_overlay_js_data():
     combined[ck] = {}
     for cat in ["local_drink","food","spots","daytime"]:
       d = OVERLAY_DETAIL.get(ck,{}).get(cat,{})
-      if d:
-        mq = _MAP_QUERIES.get((ck,cat))
+      if not d:
+        continue
+      # ── 섹션별 맵+비디오 지원 (food / spots / daytime) ──
+      secs = _build_sections(ck, cat)
+      if secs:
+        # sections 있는 경우: 레거시 map_query 불필요, sections 임베드
+        d = dict(d, sections=secs)
+      else:
+        # local_drink 등 레거시: 단일 맵 쿼리만 추가
+        mq = _MAP_QUERIES.get((ck, cat))
         if mq:
           d = dict(d, map_query=mq[0], map_zoom=mq[1])
-        combined[ck][cat] = d
+      combined[ck][cat] = d
     # 난파 오버레이
     if ck in OVERLAY_NANPA:
       combined[ck]["nanpa"] = OVERLAY_NANPA[ck]
@@ -1131,14 +1380,22 @@ def add_furigana(text):
   return text
 
 def apply_furigana_to_overlay(data_dict):
-  """오버레이 데이터의 detail/strategy 필드에 후리가나 적용"""
+  """오버레이 데이터의 detail/strategy 필드에 후리가나 적용
+  (멀티 섹션의 sections[i].detail 포함)"""
   import copy
   result = copy.deepcopy(data_dict)
   for ck in result:
     for cat in result[ck]:
+      entry = result[ck][cat]
+      # 레거시 단일 필드
       for field in ["detail","strategy"]:
-        if field in result[ck][cat]:
-          result[ck][cat][field] = add_furigana(result[ck][cat][field])
+        if field in entry:
+          entry[field] = add_furigana(entry[field])
+      # 멀티 섹션 detail
+      if "sections" in entry:
+        for sec in entry["sections"]:
+          if "detail" in sec and sec["detail"]:
+            sec["detail"] = add_furigana(sec["detail"])
   return result
 
 
@@ -1155,10 +1412,43 @@ function showOverlay(city, cat) {
   __ov_city = city; __ov_cat = cat; __ov_vidIdx = 0;
   const d = window.__OV[city][cat];
   document.getElementById('ov-title').innerHTML = d.title || '';
-  document.getElementById('ov-detail').innerHTML = d.detail || '';
+
+  const hasSections = d.sections && d.sections.length > 0;
+
+  // 멀티 섹션 vs 레거시 단일 레이아웃 전환
+  const detailWrap = document.getElementById('ov-detail-wrap');
+  const mapSec    = document.getElementById('ov-map-section');
+  const vidSec    = document.getElementById('ov-vid-section');
+  const secsCont  = document.getElementById('ov-sections-container');
+
+  if (hasSections) {
+    if (detailWrap) detailWrap.style.display = 'none';
+    mapSec.style.display  = 'none';
+    vidSec.style.display  = 'none';
+    secsCont.style.display = 'block';
+    _renderOvSections(d);
+  } else {
+    if (detailWrap) detailWrap.style.display = '';
+    secsCont.style.display = 'none';
+    secsCont.innerHTML = '';
+    document.getElementById('ov-detail').innerHTML = d.detail || '';
+    _renderOvVideo();
+    _renderOvMap(d);
+  }
+
   document.getElementById('ov-strategy').innerHTML = d.strategy || '';
-  _renderOvVideo();
-  _renderOvMap(d);
+
+  // 방언 버튼: nanpa 오버레이에서만 표시 (dialect 데이터 있을 때)
+  const dialectBtn = document.getElementById('ov-dialect-btn');
+  if (dialectBtn) {
+    if (cat === 'nanpa' && window.__OV[city] && window.__OV[city]['dialect']) {
+      dialectBtn.style.display = 'block';
+      dialectBtn.onclick = function() { showOverlay(city, 'dialect'); };
+    } else {
+      dialectBtn.style.display = 'none';
+    }
+  }
+
   document.getElementById('ov-modal').style.display = 'flex';
   document.body.style.overflow = 'hidden';
 }
@@ -1166,6 +1456,8 @@ function showOverlay(city, cat) {
 function closeOverlay() {
   document.getElementById('ov-modal').style.display = 'none';
   document.body.style.overflow = '';
+  // iframe src 초기화 (백그라운드 재생 방지)
+  document.getElementById('ov-map-frame').src = '';
 }
 
 function shiftOvVideo(dir) {
@@ -1208,6 +1500,58 @@ function _renderOvMap(d) {
   mapBox.style.display = 'block';
   document.getElementById('ov-map-frame').src =
     `https://maps.google.com/maps?q=${q}&output=embed&hl=ja&z=${z.replace('z','')}`;
+}
+
+// ── 멀티 섹션 렌더러 ─────────────────────────────────────────
+function _renderOvSections(d) {
+  const container = document.getElementById('ov-sections-container');
+  let html = '';
+  (d.sections || []).forEach(function(sec, i) {
+    const mapUrl = sec.map_query
+      ? 'https://maps.google.com/maps?q=' + encodeURIComponent(sec.map_query)
+        + '&output=embed&hl=ja&z=' + (sec.map_zoom || '15').replace('z','')
+      : null;
+    const vid = sec.video;
+    const embedUrl = vid
+      ? 'https://www.youtube.com/embed/' + vid.id + '?rel=0&modestbranding=1'
+      : null;
+
+    html += '<div class="ov-spot-section">';
+    if (sec.name) {
+      html += '<div class="ov-spot-name">📍 ' + sec.name + '</div>';
+    }
+    if (sec.detail) {
+      html += '<div class="ov-spot-detail ov-detail">' + sec.detail + '</div>';
+    }
+    if (mapUrl) {
+      html += '<div class="ov-spot-map-wrap">'
+            + '<div class="ov-map-label">🗺️ Google Maps</div>'
+            + '<iframe src="' + mapUrl + '" width="100%" frameborder="0"'
+            + ' allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"'
+            + ' class="ov-spot-map-frame"></iframe>'
+            + '</div>';
+    }
+    if (embedUrl) {
+      const ytUrl = 'https://youtu.be/' + vid.id;
+      const safeTitle = (vid.title || '').replace(/"/g, '&quot;');
+      html += '<div class="ov-spot-vid-wrap">'
+            + '<div class="ov-map-label">📺 관련 YouTube</div>'
+            + '<div class="ov-yt-embed"><iframe src="' + embedUrl + '" width="100%"'
+            + ' frameborder="0" allow="accelerometer; autoplay; clipboard-write;'
+            + ' encrypted-media; gyroscope; picture-in-picture" allowfullscreen'
+            + ' loading="lazy" title="' + safeTitle + '" class="ov-spot-vid-frame"></iframe></div>'
+            + '<p class="ov-vid-title"><a href="' + ytUrl + '" target="_blank" rel="noopener">'
+            + (vid.title || '') + '</a></p>'
+            + '<p class="ov-vid-ch">' + (vid.channel || '') + '</p>'
+            + '<p class="ov-vid-note">' + (vid.note || '') + '</p>'
+            + '</div>';
+    }
+    html += '</div>';
+    if (i < (d.sections.length - 1)) {
+      html += '<hr class="ov-spot-divider">';
+    }
+  });
+  container.innerHTML = html;
 }
 
 // 배경 클릭 시 닫기
@@ -1297,10 +1641,16 @@ def build_js_data():
       d = OVERLAY_DETAIL.get(ck,{}).get(cat,{})
       if d:
         d2 = dict(d)
-        mq = _MAP_QUERIES.get((ck,cat))
-        if mq:
-          d2["map_query"] = mq[0]
-          d2["map_zoom"] = mq[1].replace("z","")
+        # ── 섹션별 맵+비디오 지원 (food / spots / daytime) ──
+        secs = _build_sections(ck, cat)
+        if secs:
+          d2["sections"] = secs
+        else:
+          # local_drink 등 레거시: 단일 맵 쿼리만 추가
+          mq = _MAP_QUERIES.get((ck, cat))
+          if mq:
+            d2["map_query"] = mq[0]
+            d2["map_zoom"] = mq[1].replace("z","")
         raw[ck][cat] = d2
     if ck in OVERLAY_NANPA:
       raw[ck]["nanpa"] = OVERLAY_NANPA[ck]
@@ -1394,6 +1744,39 @@ OVERLAY_CSS_COMMON = """
 .clickable-block:hover{opacity:.85;transform:translateX(2px);}
 .clickable-row{cursor:pointer;}
 .clickable-row:hover td{background:var(--ov-row-hover) !important;}
+/* ── 멀티 섹션 레이아웃 ── */
+#ov-sections-container{margin-top:6px;}
+.ov-spot-section{margin:0;}
+.ov-spot-name{
+  font-size:14px;font-weight:700;color:var(--ov-title);
+  margin:16px 0 8px;padding:8px 14px;
+  background:var(--ov-strat-bg);
+  border-left:4px solid var(--ov-title-border);
+  border-radius:0 7px 7px 0;
+}
+.ov-spot-detail{margin-bottom:8px;}
+.ov-spot-detail p{margin-bottom:7px;}
+.ov-spot-map-wrap{margin:10px 0;}
+.ov-spot-map-frame{width:100%;height:230px;border:0;border-radius:7px;display:block;}
+.ov-spot-vid-wrap{
+  background:var(--ov-vid-bg);border-radius:7px;
+  padding:12px;margin:10px 0;
+}
+.ov-spot-vid-frame{width:100%;height:205px;border:0;border-radius:6px;display:block;}
+.ov-spot-divider{
+  border:none;border-top:2px solid var(--ov-border);
+  margin:20px 0;opacity:.6;
+}
+/* 방언 상세 버튼 */
+#ov-dialect-btn{
+  display:none;width:100%;margin:16px 0 4px;
+  padding:11px 18px;
+  background:var(--ov-nav-bg);color:var(--ov-nav-fg);
+  border:none;border-radius:7px;cursor:pointer;
+  font-size:13px;font-weight:700;text-align:left;
+  letter-spacing:.3px;transition:.15s;
+}
+#ov-dialect-btn:hover{opacity:.82;}
 /* ── 모바일 반응형 ── */
 @media(max-width:640px){
   #ov-modal{padding:10px 6px;}
@@ -1407,12 +1790,19 @@ OVERLAY_CSS_COMMON = """
   .ov-nav-btn{padding:4px 10px;font-size:11px;}
   .ov-strategy{padding:10px 12px;}
   .ov-section-label{margin:12px 0 5px;}
+  .ov-spot-name{font-size:13px;padding:7px 11px;}
+  .ov-spot-map-frame{height:190px;}
+  .ov-spot-vid-frame{height:175px;}
+  .ov-spot-vid-wrap{padding:9px;}
+  #ov-dialect-btn{padding:9px 14px;font-size:12px;}
 }
 @media(max-width:400px){
   .ov-inner{padding:14px 10px;}
   .ov-title{font-size:13px;}
   .ov-yt-embed iframe{height:160px;}
   #ov-map-frame{height:180px;}
+  .ov-spot-map-frame{height:165px;}
+  .ov-spot-vid-frame{height:155px;}
 }
 """
 
@@ -1452,15 +1842,34 @@ OVERLAY_HTML_MODAL = """
   <div class="ov-inner">
     <button class="ov-close" onclick="closeOverlay()" title="닫기">✕</button>
     <div class="ov-title" id="ov-title"></div>
+
+    <!-- ① 레거시: 단일 맵 (sections 없을 때) -->
     <div id="ov-map-section">
       <div class="ov-map-label">📍 Google Maps</div>
       <iframe id="ov-map-frame" src="" allowfullscreen loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="ov-section-label">📖 상세 정보</div>
-    <div class="ov-detail" id="ov-detail"></div>
+
+    <!-- ② 레거시: 단일 상세 (sections 없을 때) -->
+    <div id="ov-detail-wrap">
+      <div class="ov-section-label">📖 상세 정보</div>
+      <div class="ov-detail" id="ov-detail"></div>
+    </div>
+
+    <!-- ③ 멀티 섹션 (sections 있을 때) — 각 섹션에 맵+영상 포함 -->
+    <div id="ov-sections-container" style="display:none"></div>
+
+    <!-- ④ 공통: 여행 전략 -->
     <div class="ov-section-label">🎯 여행 전략 연계</div>
     <div class="ov-strategy" id="ov-strategy"></div>
+
+    <!-- ⑤ 방언 상세 해설 버튼 (nanpa 오버레이 전용) -->
+    <button id="ov-dialect-btn" style="display:none"
+            title="이 지역 방언 전체 해설 보기">
+      🗣️ 이 지역 방언 전체 해설 보기 →
+    </button>
+
+    <!-- ⑥ 레거시: 단일 YouTube 내비게이터 (sections 없을 때) -->
     <div id="ov-vid-section">
       <div class="ov-vid-header">
         <span class="ov-vid-header-title">📺 관련 YouTube</span>
